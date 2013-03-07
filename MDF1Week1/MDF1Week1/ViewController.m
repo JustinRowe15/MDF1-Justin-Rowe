@@ -22,15 +22,45 @@
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
+//Editing Mode will need to be set to True in order to add/delete functions can be run
+- (void)viewDidAppear:(BOOL)animated;
+{
+    [scheduleTable setEditing:true];
+    [super viewDidAppear:animated];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
+//Number of rows listed from the total number of the Array
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section;
 {
     return [universityArray count];
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+//Allowing the array to have rows deleted
+- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath;
+{
+    return UITableViewCellEditingStyleDelete;
+}
+
+//Delete mode button action
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath;
+{
+    if (editingStyle == UITableViewCellEditingStyleDelete)
+    {
+        //removes object from array
+        [universityArray removeObjectAtIndex:indexPath.row];
+        [scheduleTable deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:true];
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath;
@@ -49,6 +79,11 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
+{
+    
+}
+
+- (IBAction)editButton:(id)sender
 {
     
 }

@@ -16,4 +16,6 @@
     NSMutableArray * universityArray;
 }
 
+- (IBAction)editButton:(id)sender;
+
 @end
