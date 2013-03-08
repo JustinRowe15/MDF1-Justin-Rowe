@@ -22,7 +22,7 @@
     
     mascotArray = [[NSMutableArray alloc] initWithObjects:@"Wildcats", @"Flames", @"Patriots", @"Huskies", @"Vandals", @"Pilots", @"Bears", @"Sycamores", @"Trojans", @"Crusaders", @"Aggies", @"Jackrabbits", @"Bearcats", @"Billikens", @"Rebels", @"Bulldogs", @"Broncos", @"Rams", @"Aztecs", @"Cowboys", @"Wolf Pack", @"Falcons", nil];
     
-    photosArray = [[NSMutableArray alloc] initWithObjects:@"davidson.png", @"UIC.png", @"mason.png", @"uconn.png", @"idaho.png", @"portland.png", @"mercer.png", @"indianastate.png", @"usc.png", @"valpo.png", @"nmsu.png", @"southdakota.png", @"cincinnati.png", @"billiken_blue.png", @"unlv.png", @"fresno.png", @"boise.png", @"coloradostate.png", @"aztecs.png", @"wyoming.png", @"nevada.png", @"falcons.png", nil];
+    photosArray = [[NSMutableArray alloc] initWithObjects:@"davidson.png", @"UIC.png", @"mason.png", @"uconn.png", @"idaho.png", @"portland.png", @"mercer.png", @"indianastate.png", @"usc.png", @"valpo.png", @"nmsu.png", @"southdakota.png", @"cincinnati.png", @"billiken_blue.png", @"unlv.png", @"fresno.png", @"boise.png", @"coloradostate.png", @"aztecs.png", @"wyoming.png", @"nevada.png", @"airforce.png", nil];
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
