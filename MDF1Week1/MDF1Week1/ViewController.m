@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "CustomTableCell.h"
 
 @interface ViewController ()
 
@@ -23,16 +24,34 @@
 }
 
 //Editing Mode will need to be set to True in order to add/delete functions can be run
-- (void)viewDidAppear:(BOOL)animated;
+/* - (void)viewDidAppear:(BOOL)animated;
 {
     [scheduleTable setEditing:true];
     [super viewDidAppear:animated];
-}
+} */
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)editButton:(id)sender
+{
+    UIButton * editScheduleButton = (UIButton *)sender;
+    if (editScheduleButton != nil)
+    {
+        if ([scheduleTable isEditing])
+        {
+            [scheduleTable setEditing:false];
+            [editScheduleButton setTitle:@"Edit Schedule" forState:UIControlStateNormal];
+        }
+        else
+        {
+            [scheduleTable setEditing:true];
+            [editScheduleButton setTitle:@"Done Editing Schedule" forState:UIControlStateNormal];
+        }
+    }
 }
 
 //Number of rows listed from the total number of the Array
@@ -61,29 +80,40 @@
         [universityArray removeObjectAtIndex:indexPath.row];
         [scheduleTable deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:true];
     }
+    else if (editingStyle == UITableViewCellEditingStyleInsert)
+    {
+        //adding object to array
+        [universityArray insertObject:@"March Madness 1st Opponent" atIndex:indexPath.row];
+        [scheduleTable insertRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:true];
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath;
 {
     static NSString * scheduleIdentifier = @"Cell";
     
-    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:scheduleIdentifier];
+    CustomTableCell * cell = [tableView dequeueReusableCellWithIdentifier:scheduleIdentifier];
     if (cell == nil)
     {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:scheduleIdentifier];
+        //cell = [[CustomTableCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:scheduleIdentifier];
+        
+        NSArray * views = [[NSBundle mainBundle] loadNibNamed:@"CustomCellView" owner:nil options:nil];
+        
+        for (UIView * view in views)
+        {
+            if ([view isKindOfClass:[CustomTableCell class]])
+            {
+                cell = (CustomTableCell *)view;
+                
+                cell.textLabel.text = [universityArray objectAtIndex:indexPath.row];
+            }
+        }
     }
-    
-    cell.textLabel.text = (NSString*)[universityArray objectAtIndex:indexPath.row];
     
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
-{
-    
-}
-
-- (IBAction)editButton:(id)sender
 {
     
 }

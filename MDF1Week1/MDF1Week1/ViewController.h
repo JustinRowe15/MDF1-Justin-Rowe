@@ -7,12 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CustomTableCell.h"
 
 @interface ViewController : UIViewController <UITableViewDelegate>
 
 {
     IBOutlet UITableView * scheduleTable;
-    
     NSMutableArray * universityArray;
 }
 
