@@ -7,8 +7,11 @@
 //
 
 #import "CustomTableCell.h"
+#import "TeamViewController.h"
 
 @implementation CustomTableCell
+
+@synthesize universityLabel, mascotLabel, mascotImage;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {

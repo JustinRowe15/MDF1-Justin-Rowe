@@ -7,11 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TeamViewController.h"
 
 @interface CustomTableCell : UITableViewCell
 
 {
-    IBOutlet UILabel * textLabel;
+    
 }
+
+@property IBOutlet UILabel * universityLabel;
+@property IBOutlet UILabel * mascotLabel;
+@property IBOutlet UIImage * mascotImage;
 
 @end

@@ -21,6 +21,32 @@
 		0B4A373D16E953A0003A93A8 /* CustomCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B4A373C16E953A0003A93A8 /* CustomCellView.xib */; };
 		0B4A374016E95491003A93A8 /* CustomTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4A373F16E95491003A93A8 /* CustomTableCell.m */; };
 		0B4A374416E9600D003A93A8 /* lobo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B4A374316E9600D003A93A8 /* lobo.png */; };
+		0B4A374816E9637A003A93A8 /* TeamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4A374616E9637A003A93A8 /* TeamViewController.m */; };
+		0B4A374916E9637A003A93A8 /* TeamViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B4A374716E9637A003A93A8 /* TeamViewController.xib */; };
+		0B4A376216E97B64003A93A8 /* airforce.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B4A374A16E97B64003A93A8 /* airforce.png */; };
+		0B4A376316E97B64003A93A8 /* aztecs.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B4A374B16E97B64003A93A8 /* aztecs.png */; };
+		0B4A376416E97B64003A93A8 /* billiken_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B4A374C16E97B64003A93A8 /* billiken_blue.png */; };
+		0B4A376516E97B64003A93A8 /* boise.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B4A374D16E97B64003A93A8 /* boise.png */; };
+		0B4A376616E97B64003A93A8 /* cincinnati.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B4A374E16E97B64003A93A8 /* cincinnati.png */; };
+		0B4A376716E97B64003A93A8 /* coloradostate.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B4A374F16E97B64003A93A8 /* coloradostate.png */; };
+		0B4A376816E97B64003A93A8 /* davidson.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B4A375016E97B64003A93A8 /* davidson.png */; };
+		0B4A376916E97B64003A93A8 /* fresno.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B4A375116E97B64003A93A8 /* fresno.png */; };
+		0B4A376A16E97B64003A93A8 /* idaho.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B4A375216E97B64003A93A8 /* idaho.png */; };
+		0B4A376B16E97B64003A93A8 /* indianastate.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B4A375316E97B64003A93A8 /* indianastate.png */; };
+		0B4A376C16E97B64003A93A8 /* lobo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0B4A375416E97B64003A93A8 /* lobo.gif */; };
+		0B4A376D16E97B64003A93A8 /* mason.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B4A375516E97B64003A93A8 /* mason.png */; };
+		0B4A376E16E97B64003A93A8 /* mercer.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B4A375616E97B64003A93A8 /* mercer.png */; };
+		0B4A376F16E97B64003A93A8 /* nevada.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B4A375716E97B64003A93A8 /* nevada.png */; };
+		0B4A377016E97B64003A93A8 /* New-Mexico-logo-2009.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0B4A375816E97B64003A93A8 /* New-Mexico-logo-2009.gif */; };
+		0B4A377116E97B64003A93A8 /* nmsu.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B4A375916E97B64003A93A8 /* nmsu.png */; };
+		0B4A377216E97B64003A93A8 /* portland.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B4A375A16E97B64003A93A8 /* portland.png */; };
+		0B4A377316E97B64003A93A8 /* southdakota.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B4A375B16E97B64003A93A8 /* southdakota.png */; };
+		0B4A377416E97B64003A93A8 /* uconn.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B4A375C16E97B64003A93A8 /* uconn.png */; };
+		0B4A377516E97B64003A93A8 /* UIC.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B4A375D16E97B64003A93A8 /* UIC.png */; };
+		0B4A377616E97B64003A93A8 /* unlv.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B4A375E16E97B64003A93A8 /* unlv.png */; };
+		0B4A377716E97B64003A93A8 /* usc.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B4A375F16E97B64003A93A8 /* usc.png */; };
+		0B4A377816E97B64003A93A8 /* valpo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B4A376016E97B64003A93A8 /* valpo.png */; };
+		0B4A377916E97B64003A93A8 /* wyoming.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B4A376116E97B64003A93A8 /* wyoming.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +70,33 @@
 		0B4A373E16E95491003A93A8 /* CustomTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableCell.h; sourceTree = "<group>"; };
 		0B4A373F16E95491003A93A8 /* CustomTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableCell.m; sourceTree = "<group>"; };
 		0B4A374316E9600D003A93A8 /* lobo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lobo.png; path = ../../../lobo.png; sourceTree = "<group>"; };
+		0B4A374516E9637A003A93A8 /* TeamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamViewController.h; sourceTree = "<group>"; };
+		0B4A374616E9637A003A93A8 /* TeamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamViewController.m; sourceTree = "<group>"; };
+		0B4A374716E9637A003A93A8 /* TeamViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TeamViewController.xib; sourceTree = "<group>"; };
+		0B4A374A16E97B64003A93A8 /* airforce.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = airforce.png; path = "../../../Team Logos/airforce.png"; sourceTree = "<group>"; };
+		0B4A374B16E97B64003A93A8 /* aztecs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = aztecs.png; path = "../../../Team Logos/aztecs.png"; sourceTree = "<group>"; };
+		0B4A374C16E97B64003A93A8 /* billiken_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = billiken_blue.png; path = "../../../Team Logos/billiken_blue.png"; sourceTree = "<group>"; };
+		0B4A374D16E97B64003A93A8 /* boise.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = boise.png; path = "../../../Team Logos/boise.png"; sourceTree = "<group>"; };
+		0B4A374E16E97B64003A93A8 /* cincinnati.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cincinnati.png; path = "../../../Team Logos/cincinnati.png"; sourceTree = "<group>"; };
+		0B4A374F16E97B64003A93A8 /* coloradostate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = coloradostate.png; path = "../../../Team Logos/coloradostate.png"; sourceTree = "<group>"; };
+		0B4A375016E97B64003A93A8 /* davidson.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = davidson.png; path = "../../../Team Logos/davidson.png"; sourceTree = "<group>"; };
+		0B4A375116E97B64003A93A8 /* fresno.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fresno.png; path = "../../../Team Logos/fresno.png"; sourceTree = "<group>"; };
+		0B4A375216E97B64003A93A8 /* idaho.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = idaho.png; path = "../../../Team Logos/idaho.png"; sourceTree = "<group>"; };
+		0B4A375316E97B64003A93A8 /* indianastate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = indianastate.png; path = "../../../Team Logos/indianastate.png"; sourceTree = "<group>"; };
+		0B4A375416E97B64003A93A8 /* lobo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = lobo.gif; path = "../../../Team Logos/lobo.gif"; sourceTree = "<group>"; };
+		0B4A375516E97B64003A93A8 /* mason.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mason.png; path = "../../../Team Logos/mason.png"; sourceTree = "<group>"; };
+		0B4A375616E97B64003A93A8 /* mercer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mercer.png; path = "../../../Team Logos/mercer.png"; sourceTree = "<group>"; };
+		0B4A375716E97B64003A93A8 /* nevada.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nevada.png; path = "../../../Team Logos/nevada.png"; sourceTree = "<group>"; };
+		0B4A375816E97B64003A93A8 /* New-Mexico-logo-2009.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "New-Mexico-logo-2009.gif"; path = "../../../Team Logos/New-Mexico-logo-2009.gif"; sourceTree = "<group>"; };
+		0B4A375916E97B64003A93A8 /* nmsu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nmsu.png; path = "../../../Team Logos/nmsu.png"; sourceTree = "<group>"; };
+		0B4A375A16E97B64003A93A8 /* portland.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = portland.png; path = "../../../Team Logos/portland.png"; sourceTree = "<group>"; };
+		0B4A375B16E97B64003A93A8 /* southdakota.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = southdakota.png; path = "../../../Team Logos/southdakota.png"; sourceTree = "<group>"; };
+		0B4A375C16E97B64003A93A8 /* uconn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = uconn.png; path = "../../../Team Logos/uconn.png"; sourceTree = "<group>"; };
+		0B4A375D16E97B64003A93A8 /* UIC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = UIC.png; path = "../../../Team Logos/UIC.png"; sourceTree = "<group>"; };
+		0B4A375E16E97B64003A93A8 /* unlv.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = unlv.png; path = "../../../Team Logos/unlv.png"; sourceTree = "<group>"; };
+		0B4A375F16E97B64003A93A8 /* usc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = usc.png; path = "../../../Team Logos/usc.png"; sourceTree = "<group>"; };
+		0B4A376016E97B64003A93A8 /* valpo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = valpo.png; path = "../../../Team Logos/valpo.png"; sourceTree = "<group>"; };
+		0B4A376116E97B64003A93A8 /* wyoming.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wyoming.png; path = "../../../Team Logos/wyoming.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +152,9 @@
 				0B4A373E16E95491003A93A8 /* CustomTableCell.h */,
 				0B4A373F16E95491003A93A8 /* CustomTableCell.m */,
 				0B4A373C16E953A0003A93A8 /* CustomCellView.xib */,
+				0B4A374516E9637A003A93A8 /* TeamViewController.h */,
+				0B4A374616E9637A003A93A8 /* TeamViewController.m */,
+				0B4A374716E9637A003A93A8 /* TeamViewController.xib */,
 			);
 			path = MDF1Week1;
 			sourceTree = "<group>";
@@ -106,6 +162,30 @@
 		0B4A372016E93B9F003A93A8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0B4A374A16E97B64003A93A8 /* airforce.png */,
+				0B4A374B16E97B64003A93A8 /* aztecs.png */,
+				0B4A374C16E97B64003A93A8 /* billiken_blue.png */,
+				0B4A374D16E97B64003A93A8 /* boise.png */,
+				0B4A374E16E97B64003A93A8 /* cincinnati.png */,
+				0B4A374F16E97B64003A93A8 /* coloradostate.png */,
+				0B4A375016E97B64003A93A8 /* davidson.png */,
+				0B4A375116E97B64003A93A8 /* fresno.png */,
+				0B4A375216E97B64003A93A8 /* idaho.png */,
+				0B4A375316E97B64003A93A8 /* indianastate.png */,
+				0B4A375416E97B64003A93A8 /* lobo.gif */,
+				0B4A375516E97B64003A93A8 /* mason.png */,
+				0B4A375616E97B64003A93A8 /* mercer.png */,
+				0B4A375716E97B64003A93A8 /* nevada.png */,
+				0B4A375816E97B64003A93A8 /* New-Mexico-logo-2009.gif */,
+				0B4A375916E97B64003A93A8 /* nmsu.png */,
+				0B4A375A16E97B64003A93A8 /* portland.png */,
+				0B4A375B16E97B64003A93A8 /* southdakota.png */,
+				0B4A375C16E97B64003A93A8 /* uconn.png */,
+				0B4A375D16E97B64003A93A8 /* UIC.png */,
+				0B4A375E16E97B64003A93A8 /* unlv.png */,
+				0B4A375F16E97B64003A93A8 /* usc.png */,
+				0B4A376016E97B64003A93A8 /* valpo.png */,
+				0B4A376116E97B64003A93A8 /* wyoming.png */,
 				0B4A374316E9600D003A93A8 /* lobo.png */,
 				0B4A372116E93B9F003A93A8 /* MDF1Week1-Info.plist */,
 				0B4A372216E93B9F003A93A8 /* InfoPlist.strings */,
@@ -176,6 +256,31 @@
 				0B4A373616E93B9F003A93A8 /* ViewController.xib in Resources */,
 				0B4A373D16E953A0003A93A8 /* CustomCellView.xib in Resources */,
 				0B4A374416E9600D003A93A8 /* lobo.png in Resources */,
+				0B4A374916E9637A003A93A8 /* TeamViewController.xib in Resources */,
+				0B4A376216E97B64003A93A8 /* airforce.png in Resources */,
+				0B4A376316E97B64003A93A8 /* aztecs.png in Resources */,
+				0B4A376416E97B64003A93A8 /* billiken_blue.png in Resources */,
+				0B4A376516E97B64003A93A8 /* boise.png in Resources */,
+				0B4A376616E97B64003A93A8 /* cincinnati.png in Resources */,
+				0B4A376716E97B64003A93A8 /* coloradostate.png in Resources */,
+				0B4A376816E97B64003A93A8 /* davidson.png in Resources */,
+				0B4A376916E97B64003A93A8 /* fresno.png in Resources */,
+				0B4A376A16E97B64003A93A8 /* idaho.png in Resources */,
+				0B4A376B16E97B64003A93A8 /* indianastate.png in Resources */,
+				0B4A376C16E97B64003A93A8 /* lobo.gif in Resources */,
+				0B4A376D16E97B64003A93A8 /* mason.png in Resources */,
+				0B4A376E16E97B64003A93A8 /* mercer.png in Resources */,
+				0B4A376F16E97B64003A93A8 /* nevada.png in Resources */,
+				0B4A377016E97B64003A93A8 /* New-Mexico-logo-2009.gif in Resources */,
+				0B4A377116E97B64003A93A8 /* nmsu.png in Resources */,
+				0B4A377216E97B64003A93A8 /* portland.png in Resources */,
+				0B4A377316E97B64003A93A8 /* southdakota.png in Resources */,
+				0B4A377416E97B64003A93A8 /* uconn.png in Resources */,
+				0B4A377516E97B64003A93A8 /* UIC.png in Resources */,
+				0B4A377616E97B64003A93A8 /* unlv.png in Resources */,
+				0B4A377716E97B64003A93A8 /* usc.png in Resources */,
+				0B4A377816E97B64003A93A8 /* valpo.png in Resources */,
+				0B4A377916E97B64003A93A8 /* wyoming.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,6 +295,7 @@
 				0B4A372A16E93B9F003A93A8 /* AppDelegate.m in Sources */,
 				0B4A373316E93B9F003A93A8 /* ViewController.m in Sources */,
 				0B4A374016E95491003A93A8 /* CustomTableCell.m in Sources */,
+				0B4A374816E9637A003A93A8 /* TeamViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

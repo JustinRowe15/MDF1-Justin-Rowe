@@ -8,12 +8,15 @@
 
 #import <UIKit/UIKit.h>
 #import "CustomTableCell.h"
+#import "TeamViewController.h"
 
 @interface ViewController : UIViewController <UITableViewDelegate>
 
 {
     IBOutlet UITableView * scheduleTable;
     NSMutableArray * universityArray;
+    NSMutableArray * mascotArray;
+    NSMutableArray * photosArray;
 }
 
 - (IBAction)editButton:(id)sender;

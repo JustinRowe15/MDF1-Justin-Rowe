@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "CustomTableCell.h"
+#import "TeamViewController.h"
 
 @interface ViewController ()
 
@@ -17,7 +18,11 @@
 
 - (void)viewDidLoad
 {
-    universityArray = [[NSMutableArray alloc] initWithObjects:@"Davidson", @"UIC", @"George Mason", @"Connecticut", @"Idaho", @"Portland", @"Mercer", @"Indiana State", @"USC", @"Valparaiso", @"New Mexico State", @"South Dakota State", @"Cincinnati", @"Saint Louis", @"UNLV", @"Fresno State", @"Boise State", @"Colorado State", @"San Diego State", @"Wyoming", nil];
+    universityArray = [[NSMutableArray alloc] initWithObjects:@"Davidson", @"UIC", @"George Mason", @"Connecticut", @"Idaho", @"Portland", @"Mercer", @"Indiana State", @"USC", @"Valparaiso", @"New Mexico State", @"South Dakota State", @"Cincinnati", @"Saint Louis", @"UNLV", @"Fresno State", @"Boise State", @"Colorado State", @"San Diego State", @"Wyoming", @"Nevada", @"Air Force", nil];
+    
+    mascotArray = [[NSMutableArray alloc] initWithObjects:@"Wildcats", @"Flames", @"Patriots", @"Huskies", @"Vandals", @"Pilots", @"Bears", @"Sycamores", @"Trojans", @"Crusaders", @"Aggies", @"Jackrabbits", @"Bearcats", @"Billikens", @"Rebels", @"Bulldogs", @"Broncos", @"Rams", @"Aztecs", @"Cowboys", @"Wolf Pack", @"Falcons", nil];
+    
+    photosArray = [[NSMutableArray alloc] initWithObjects:@"davidson.png", @"UIC.png", @"mason.png", @"uconn.png", @"idaho.png", @"portland.png", @"mercer.png", @"indianastate.png", @"usc.png", @"valpo.png", @"nmsu.png", @"southdakota.png", @"cincinnati.png", @"billiken_blue.png", @"unlv.png", @"fresno.png", @"boise.png", @"coloradostate.png", @"aztecs.png", @"wyoming.png", @"nevada.png", @"falcons.png", nil];
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
@@ -58,6 +63,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section;
 {
     return [universityArray count];
+    return [mascotArray count];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -78,12 +84,14 @@
     {
         //removes object from array
         [universityArray removeObjectAtIndex:indexPath.row];
+        [mascotArray removeObjectAtIndex:indexPath.row];
         [scheduleTable deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:true];
     }
     else if (editingStyle == UITableViewCellEditingStyleInsert)
     {
         //adding object to array
-        [universityArray insertObject:@"March Madness 1st Opponent" atIndex:indexPath.row];
+        [universityArray insertObject:@"University" atIndex:indexPath.row];
+        [mascotArray insertObject:@"Mascot" atIndex:indexPath.row];
         [scheduleTable insertRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:true];
     }
 }
@@ -105,17 +113,15 @@
             {
                 cell = (CustomTableCell *)view;
                 
-                cell.textLabel.text = [universityArray objectAtIndex:indexPath.row];
+                UIImage * image = [UIImage imageNamed:[photosArray objectAtIndex:indexPath.row]];
+                cell.imageView.image = image;
+                cell.universityLabel.text = [universityArray objectAtIndex:indexPath.row];
+                cell.mascotLabel.text = [mascotArray objectAtIndex:indexPath.row];
             }
         }
     }
     
     return cell;
-}
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
-{
-    
 }
 
 @end
